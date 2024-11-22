@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Tracker - Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex flex-column vh-100">
+    <div class="container mt-4">
+        <!-- Game Summary -->
+        <h1 class="text-primary fw-bold mb-3">Game Summary</h1>
+        <div class="row text-center mb-4">
+            <div class="col">
+                <div class="bg-primary text-white rounded p-3">
+                    <h4>Players</h4>
+                    <p class="fs-5 fw-bold">12</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="bg-success text-white rounded p-3">
+                    <h4>Duration</h4>
+                    <p class="fs-5 fw-bold">45 min</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="bg-warning text-dark rounded p-3">
+                    <h4>Last Tag</h4>
+                    <p class="fs-5 fw-bold">2 min ago</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Leaderboard -->
+        <h2 class="text-secondary fw-bold mb-3">Leaderboard</h2>
+        <ul class="list-group mb-4">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                John Doe
+                <span class="badge bg-primary rounded-pill">4 Tags</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Jane Smith
+                <span class="badge bg-success rounded-pill">3 Tags</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Alice Johnson
+                <span class="badge bg-warning rounded-pill">2 Tags</span>
+            </li>
+        </ul>
+
+        <!-- Game Notifications -->
+        <h2 class="text-secondary fw-bold mb-3">Notifications</h2>
+        <div class="alert alert-info" role="alert">
+            <strong>John Doe</strong> tagged <strong>Jane Smith</strong> 2 min ago!
+        </div>
+        <div class="alert alert-success" role="alert">
+            <strong>Alice Johnson</strong> joined the game!
+        </div>
+
+        <!-- Join New Game Button -->
+        <a href="group.html" class="btn btn-primary w-100 rounded-pill">Join New Game</a>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="fixed-bottom bg-white border-top d-flex justify-content-around py-2">
+        <a href="menu.html" class="text-center text-decoration-none">
+            <i class="bi bi-house-fill fs-4 text-primary"></i>
+            <div class="text-muted small">Menu</div>
+        </a>
+        <a href="group.html" class="text-center text-decoration-none">
+            <i class="bi bi-people-fill fs-4 text-primary"></i>
+            <div class="text-muted small">Groups</div>
+        </a>
+        <a href="dashboard.html" class="text-center text-decoration-none">
+            <i class="bi bi-map-fill fs-4 text-primary"></i>
+            <div class="text-muted small">Dashboard</div>
+        </a>
+    </div>
+</body>
+</html>

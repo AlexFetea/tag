@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Tracker - Groups</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex flex-column vh-100">
+    <div class="container my-4">
+        <h1 class="text-primary fw-bold mb-4">Groups</h1>
+
+        <!-- Navigation Tabs -->
+        <ul class="nav nav-tabs mb-4">
+            <li class="nav-item">
+                <a class="nav-link active" href="#my-groups" data-bs-toggle="tab">My Groups</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#create-group" data-bs-toggle="tab">Create Group</a>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <!-- My Groups Section -->
+            <div class="tab-pane fade show active" id="my-groups">
+                <ul class="list-group mb-4">
+                    <li class="list-group-item d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-people-fill text-primary me-3 fs-4"></i>
+                            <div>
+                                <h5 class="mb-0">Friends Group</h5>
+                                <small class="text-muted">Active - 5 players</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-sm btn-primary">Join</button>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-briefcase-fill text-success me-3 fs-4"></i>
+                            <div>
+                                <h5 class="mb-0">Work Buddies</h5>
+                                <small class="text-muted">Inactive</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-sm btn-primary">Join</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Create Group Section -->
+            <div class="tab-pane fade" id="create-group">
+                <form class="w-100 mb-4" style="max-width: 500px; margin: auto;">
+                    <div class="mb-3">
+                        <label for="group-name" class="form-label">Group Name</label>
+                        <input type="text" id="group-name" class="form-control" placeholder="Enter group name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="group-description" class="form-label">Description</label>
+                        <textarea id="group-description" class="form-control" rows="3" placeholder="Optional: Add a short description"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100 rounded-pill">Create Group</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="fixed-bottom bg-white border-top d-flex justify-content-around py-2">
+        <a href="menu.html" class="text-center text-decoration-none">
+            <i class="bi bi-house-fill fs-4 text-primary"></i>
+            <div class="text-muted small">Menu</div>
+        </a>
+        <a href="group.html" class="text-center text-decoration-none">
+            <i class="bi bi-people-fill fs-4 text-primary"></i>
+            <div class="text-muted small">Groups</div>
+        </a>
+        <a href="dashboard.html" class="text-center text-decoration-none">
+            <i class="bi bi-map-fill fs-4 text-primary"></i>
+            <div class="text-muted small">Dashboard</div>
+        </a>
+    </div>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
